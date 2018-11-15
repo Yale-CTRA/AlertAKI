@@ -7,13 +7,18 @@ Created on Tue Oct 10 14:54:43 2017
 """
 
 
-from scipy.stats import skewtest, boxcox
-import numpy as np
-import seaborn as sns
-import pandas as pd
+
+
 import os
-    
-os.chdir('/home/aditya/Projects/AKI Alert/Code/second/')
+import pandas as pd
+import numpy as np
+from tqdm import tqdm
+from matplotlib.pyplot import plot
+
+import sys
+
+root = os.path.join(os.path.expanduser('~'), 'Documents', 'Projects')
+sys.path.append(root)
 #os.chdir('C:\\Users\\adity\\Projects\\AKI-Alert')
 
 from helper import loadDict, searchName, createDict
