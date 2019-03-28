@@ -19,7 +19,7 @@ import sys
 
 root = os.path.join(os.path.expanduser('~'), 'Documents', 'Projects')
 sys.path.append(root)
-#os.chdir('C:\\Users\\adity\\Projects\\AKI-Alert')
+
 
 from helper import loadDict, searchName, createDict
     
@@ -46,7 +46,6 @@ def boxcoxTrans(df, names):
 
 os.chdir('/home/aditya/Projects/AKI Alert/Data/')
 #dataFileName = '3 day outcome all patients.dta'
-dataFileName = 'full dataset two outcomes no predictions.dta'
 
 
 df = pd.read_stata(dataFileName)
